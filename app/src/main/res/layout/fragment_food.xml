@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.FoodFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        app:titleTextColor="@color/white"
+        app:title="Category"
+        android:background="#97170D"
+        android:id="@+id/toolbarFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabFood"
+        app:tabMode="scrollable"
+        app:tabTextColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="#F44336"
+        app:tabIndicatorFullWidth="false"
+        app:tabSelectedTextColor="#F44336"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerFood"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
